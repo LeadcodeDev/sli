@@ -8,7 +8,7 @@ final class ReadableKey {
   late int charCode;
   int codeUnit = 0;
 
-  void parse() {
+  KeyStroke parse() {
     while (codeUnit <= 0) {
       codeUnit = stdin.readByteSync();
     }
