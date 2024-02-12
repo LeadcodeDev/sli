@@ -8,7 +8,7 @@ final class ReadableKey {
   late int charCode;
   int codeUnit = 0;
 
-  run() {
+  void parse() {
     while (codeUnit <= 0) {
       codeUnit = stdin.readByteSync();
     }

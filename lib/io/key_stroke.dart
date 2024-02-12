@@ -12,7 +12,7 @@ final class KeyStroke {
     this.controlChar = ControlCharacter.unknown,
   });
 
-  static readKey() => ReadableKey();
+  static ReadableKey get readKey => ReadableKey();
 
   factory KeyStroke.char(String char) {
     assert(char.length == 1, 'characters must be a single unit');
