@@ -23,7 +23,7 @@ abstract class TerminalOverrides {
     return _asyncRunZoned(body, zoneValues: {_token: overrides});
   }
 
-  KeyStroke Function() get readKey => KeyStroke.readKey();
+  KeyStroke Function() get readKey => KeyStroke.readKey.parse();
 
   Terminal Function() get createTerminal => Terminal.new;
 
