@@ -1,5 +1,6 @@
-import 'package:sli/sli.dart' as sli;
+import 'package:sli/sli.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${sli.calculate()}!');
+void main(List<String> arguments) async {
+  final sli = Sli();
+  await sli.run();
 }
