@@ -8,6 +8,13 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
+  aws_s3_api: ^2.0.0
+  crypto: ^3.0.3
+  ffi: ^2.1.0
+  io: ^1.0.4
+  path: ^1.9.0
+  win32: ^5.1.1
+  yaml: ^3.1.2
   # path: ^1.8.0
 
 dev_dependencies:
